@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #container{
+      background-color: yellow;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+
+    }
+    #card{
+      background-color: white;
+      width: 450px;
+      height: 600px;
+      margin: auto;
+      position: relative;
+      /* top: 55px; */
+      box-shadow: 9px 7px black;
+      border-radius: 16px;
+      padding: 12px 0px;
+    }
+    #card:hover{
+      box-shadow: 12px 9px 5px 4px black;
+    }
+    .topimg{
+      position: relative;
+      width: 400px;
+      margin:12px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .btn{
+      width: 80px;
+      height: 30px;
+      border-radius: 7px;
+      font-weight: 800;
+      margin-left: 24px;
+      margin-bottom: 12px;
+      background-color: yellow;
+    }
+    h3{
+      font-size: 15px;
+      margin-left: 24px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+    h1{
+      margin-left: 24px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+    h1:hover{
+      color: yellow;
+      cursor: pointer;
+      
+    }
+    p{
+      margin-left: 24px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+      font-size: 23px;
+    }
+    #btm{
+      margin-left: 24px;
+      margin-bottom: 12px;
+      margin-top: 22px;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      position: relative;
+      /* background-color: black; */
+      width: 400px;
+      height: 100px;
+     
+    }
+    #btm  img{
+      width: 40px;
+    }
+    #btm h2{
+      font-size: 19px;
+      margin-left: 12px;
+    }
+    @media screen and (max-width:573px){
+      body{
+        /* overflow: none; */
+      }
+      #card{
+        width: 300px;
+
+        height: 400px;
+      }
+      .topimg{
+        width: 250px;
+        
+      }
+      .btn{
+        margin-bottom: 1px;
+      }
+      h1{
+        font-size: 22px;
+      }
+      p{
+        font-size: 18px;
+        margin-bottom: 0px;
+      }
+      #btm{
+        height: 20px;
+        width: 250px;
+        /* background-color: black; */
+
+      }
+    }
+    @media screen  and (max-width:280px) {
+      #card{
+        width: 200px;
+
+        height: 300px;
+      }
+      .topimg{
+        width: 150px;
+        
+      }
+      .btn{
+        margin-bottom: 1px;
+        font-size: 10px;
+        padding: 5px 7px;
+      }
+      h3{
+        font-size: 9px;
+      }
+      h1{
+        font-size: 12px;
+      }
+      p{
+        font-size:10px;
+        margin-right: 12px;
+        margin-bottom: 0px;
+      }
+      #btm{
+        height: 20px;
+        width: 250px;
+        /* background-color: black; */
+
+      }
+      #btm
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div id="container">
+  <div id="card">
+    <img src="assets/images/illustration-article.svg" alt="" class="topimg">
+    <button class="btn">Learning</button>
+    <h3>Published 21 Dec 2023</h3>
+    <h1 class="main">HTML & CSS foundations</h1>
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <div id="btm">
+      <img src="assets/images/image-avatar.webp" alt="">
+      <h2>Greg Hooper</h2>
+    </div>
+  </div>
+</div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kunal Singh Thakur</a>.
+  </div>
+</body>
+</html>
